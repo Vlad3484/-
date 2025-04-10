@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
@@ -20,22 +21,22 @@
     .container {
       text-align: center;
       color: #fff;
-      padding: 10px;
+      padding: 5px;
       background: rgba(255, 255, 255, 0.3);
       border-radius: 15px;
       box-shadow: 0 0 20px rgba(0,0,0,0.2);
-      margin-bottom: 15px;
-      width: 85%;
+      margin-bottom: 5px;
+      width: 80%;
       max-width: 320px;
     }
 
     h1 {
-      font-size: 10vw; /* Зменшено до 10vw */
-      margin-bottom: 5px;
+      font-size: 2vw; /* Зменшено в 5 разів */
+      margin-bottom: 3px;
     }
 
     p {
-      font-size: 10vw; /* Зменшено до 10vw */
+      font-size: 2vw; /* Зменшено в 5 разів */
       margin-top: 0;
     }
 
@@ -43,35 +44,35 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 8px;
-      margin-bottom: 10px;
+      gap: 3px;
+      margin-bottom: 5px;
       width: 100%;
     }
 
     .photos img {
-      width: 42.5%; /* Зменшено в 2 рази */
-      max-width: 140px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      width: 17%; /* Зменшено в 5 разів */
+      max-width: 28px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
 
     .audio {
-      margin-bottom: 15px;
+      margin-bottom: 5px;
       width: 100%;
       display: flex;
       justify-content: center;
     }
 
     .audio button {
-      padding: 8px 15px;
-      font-size: 1rem;
+      padding: 2px 3px;
+      font-size: 0.4rem; /* Зменшено в 5 разів */
       background-color: #ff5e5e;
       color: white;
       border: none;
-      border-radius: 10px;
+      border-radius: 5px;
       cursor: pointer;
       width: 80%;
-      max-width: 240px;
+      max-width: 120px;
     }
 
     .audio button:hover {
@@ -90,8 +91,8 @@
 
     .heart {
       position: absolute;
-      width: 12px;
-      height: 12px;
+      width: 2px;
+      height: 2px;
       background: red;
       transform: rotate(45deg);
       animation: float 6s linear infinite;
@@ -100,19 +101,19 @@
     .heart::before, .heart::after {
       content: '';
       position: absolute;
-      width: 12px;
-      height: 12px;
+      width: 2px;
+      height: 2px;
       background: red;
       border-radius: 50%;
     }
 
     .heart::before {
-      top: -6px;
+      top: -1px;
       left: 0;
     }
 
     .heart::after {
-      left: -6px;
+      left: -1px;
       top: 0;
     }
 
@@ -130,25 +131,25 @@
     /* Додаткові медіа-запити для ще кращої адаптації */
     @media (max-width: 480px) {
       .container {
-        padding: 5px;
+        padding: 3px;
       }
 
       h1 {
-        font-size: 16vw; /* Шрифт ще зменшений для маленьких екранів */
+        font-size: 3vw; /* Зменшено в 5 разів для мобільних */
       }
 
       p {
-        font-size: 10vw; /* Зменшено до 10vw */
+        font-size: 2vw; /* Зменшено в 5 разів для мобільних */
       }
 
       .photos img {
-        width: 40%; /* Зменшено в 2 рази для мобільних */
-        max-width: 120px;
+        width: 10%; /* Зменшено в 5 разів для мобільних */
+        max-width: 20px;
       }
 
       .audio button {
-        font-size: 1.2rem; /* Трохи більший шрифт на мобільних */
-        padding: 10px;
+        font-size: 0.8rem; /* Трохи більший шрифт на мобільних */
+        padding: 4px;
       }
     }
   </style>
