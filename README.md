@@ -30,12 +30,12 @@
     }
 
     h1 {
-      font-size: 12vw;
+      font-size: 10vw; /* Зменшено до 10vw */
       margin-bottom: 5px;
     }
 
     p {
-      font-size: 6vw;
+      font-size: 10vw; /* Зменшено до 10vw */
       margin-top: 0;
     }
 
@@ -49,8 +49,8 @@
     }
 
     .photos img {
-      width: 85%;
-      max-width: 180px;
+      width: 42.5%; /* Зменшено в 2 рази */
+      max-width: 140px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
@@ -138,12 +138,12 @@
       }
 
       p {
-        font-size: 7vw;
+        font-size: 10vw; /* Зменшено до 10vw */
       }
 
       .photos img {
-        width: 80%;
-        max-width: 160px;
+        width: 40%; /* Зменшено в 2 рази для мобільних */
+        max-width: 120px;
       }
 
       .audio button {
