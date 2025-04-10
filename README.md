@@ -26,7 +26,8 @@
       border-radius: 15px;
       box-shadow: 0 0 20px rgba(0,0,0,0.2);
       margin-bottom: 15px;
-      max-width: 90%;
+      width: 90%;
+      max-width: 350px;
     }
 
     h1 {
@@ -63,7 +64,7 @@
     }
 
     .audio button {
-      padding: 10px 20px;
+      padding: 8px 16px;
       font-size: 1rem;
       background-color: #ff5e5e;
       color: white;
@@ -125,13 +126,14 @@
       }
     }
 
+    /* Медіа-запити для мобільних пристроїв */
     @media (max-width: 600px) {
       .container {
-        padding: 10px;
+        padding: 8px;
       }
 
       h1 {
-        font-size: 10vw;
+        font-size: 12vw; /* ще зменшено для мобільних */
       }
 
       p {
@@ -142,7 +144,12 @@
         width: 90%;
         max-width: 280px;
       }
+
+      .audio button {
+        font-size: 1.2rem; /* більший текст для кнопки */
+      }
     }
+
   </style>
 </head>
 <body>
