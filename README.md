@@ -20,7 +20,7 @@
     .container {
       text-align: center;
       color: #fff;
-      padding: 10px; /* Збільшено в 2 рази */
+      padding: 10px;
       background: rgba(255, 255, 255, 0.3);
       border-radius: 15px;
       box-shadow: 0 0 20px rgba(0,0,0,0.2);
@@ -29,13 +29,9 @@
       max-width: 320px;
     }
 
-    h1 {
-      font-size: 1vw; /* Зменшено в 5 разів від попереднього */
+    h1, p {
+      font-size: 4vw; /* Зроблено однаковим для заголовка і тексту */
       margin-bottom: 3px;
-    }
-
-    p {
-      font-size: 4vw; /* Збільшено в 2 рази */
       margin-top: 0;
     }
 
@@ -43,35 +39,35 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 6px; /* Збільшено в 2 рази */
-      margin-bottom: 10px; /* Збільшено в 2 рази */
+      gap: 6px;
+      margin-bottom: 10px;
       width: 100%;
     }
 
     .photos img {
-      width: 34%; /* Збільшено в 2 рази */
-      max-width: 56px; /* Збільшено в 2 рази */
+      width: 34%;
+      max-width: 56px;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
 
     .audio {
-      margin-bottom: 10px; /* Збільшено в 2 рази */
+      margin-bottom: 10px;
       width: 100%;
       display: flex;
       justify-content: center;
     }
 
     .audio button {
-      padding: 4px 6px; /* Збільшено в 2 рази */
-      font-size: 0.8rem; /* Збільшено в 2 рази */
+      padding: 4px 6px;
+      font-size: 0.8rem;
       background-color: #ff5e5e;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
       width: 80%;
-      max-width: 160px; /* Збільшено в 2 рази */
+      max-width: 160px;
     }
 
     .audio button:hover {
@@ -90,8 +86,8 @@
 
     .heart {
       position: absolute;
-      width: 4px; /* Збільшено в 2 рази */
-      height: 4px; /* Збільшено в 2 рази */
+      width: 4px;
+      height: 4px;
       background: red;
       transform: rotate(45deg);
       animation: float 6s linear infinite;
@@ -100,19 +96,19 @@
     .heart::before, .heart::after {
       content: '';
       position: absolute;
-      width: 4px; /* Збільшено в 2 рази */
-      height: 4px; /* Збільшено в 2 рази */
+      width: 4px;
+      height: 4px;
       background: red;
       border-radius: 50%;
     }
 
     .heart::before {
-      top: -2px; /* Збільшено в 2 рази */
+      top: -2px;
       left: 0;
     }
 
     .heart::after {
-      left: -2px; /* Збільшено в 2 рази */
+      left: -2px;
       top: 0;
     }
 
@@ -127,27 +123,22 @@
       }
     }
 
-    /* Додаткові медіа-запити для ще кращої адаптації */
     @media (max-width: 480px) {
       .container {
-        padding: 6px; /* Збільшено в 2 рази для мобільних */
+        padding: 6px;
       }
 
-      h1 {
-        font-size: 1vw; /* Залишено зменшеним заголовок */
-      }
-
-      p {
-        font-size: 4vw; /* Збільшено в 2 рази для мобільних */
+      h1, p {
+        font-size: 4vw; /* Одинаковий розмір для заголовка і тексту на мобільних */
       }
 
       .photos img {
-        width: 20%; /* Збільшено в 2 рази для мобільних */
-        max-width: 40px; /* Збільшено в 2 рази для мобільних */
+        width: 20%;
+        max-width: 40px;
       }
 
       .audio button {
-        font-size: 1.2rem; /* Збільшено в 2 рази для мобільних */
+        font-size: 1.2rem;
         padding: 6px;
       }
     }
