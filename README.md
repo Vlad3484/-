@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
@@ -31,7 +30,7 @@
     }
 
     h1 {
-      font-size: 2vw; /* Зменшено в 5 разів */
+      font-size: 0.2vw; /* Зменшено в 10 разів */
       margin-bottom: 3px;
     }
 
@@ -135,7 +134,7 @@
       }
 
       h1 {
-        font-size: 3vw; /* Зменшено в 5 разів для мобільних */
+        font-size: 0.4vw; /* Зменшено в 10 разів для мобільних */
       }
 
       p {
