@@ -26,17 +26,17 @@
       border-radius: 15px;
       box-shadow: 0 0 20px rgba(0,0,0,0.2);
       margin-bottom: 15px;
-      width: 90%;
-      max-width: 350px;
+      width: 85%;
+      max-width: 320px;
     }
 
     h1 {
-      font-size: 8vw;
+      font-size: 12vw;
       margin-bottom: 5px;
     }
 
     p {
-      font-size: 5vw;
+      font-size: 6vw;
       margin-top: 0;
     }
 
@@ -44,33 +44,35 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 15px;
+      gap: 8px;
+      margin-bottom: 10px;
       width: 100%;
     }
 
     .photos img {
-      width: 80%;
-      max-width: 220px;
+      width: 85%;
+      max-width: 180px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
     .audio {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       width: 100%;
       display: flex;
       justify-content: center;
     }
 
     .audio button {
-      padding: 8px 16px;
+      padding: 8px 15px;
       font-size: 1rem;
       background-color: #ff5e5e;
       color: white;
       border: none;
       border-radius: 10px;
       cursor: pointer;
+      width: 80%;
+      max-width: 240px;
     }
 
     .audio button:hover {
@@ -126,30 +128,30 @@
       }
     }
 
-    /* Медіа-запити для мобільних пристроїв */
-    @media (max-width: 600px) {
+    /* Додаткові медіа-запити для ще кращої адаптації */
+    @media (max-width: 480px) {
       .container {
-        padding: 8px;
+        padding: 5px;
       }
 
       h1 {
-        font-size: 12vw; /* ще зменшено для мобільних */
+        font-size: 16vw; /* Шрифт ще зменшений для маленьких екранів */
       }
 
       p {
-        font-size: 6vw;
+        font-size: 7vw;
       }
 
       .photos img {
-        width: 90%;
-        max-width: 280px;
+        width: 80%;
+        max-width: 160px;
       }
 
       .audio button {
-        font-size: 1.2rem; /* більший текст для кнопки */
+        font-size: 1.2rem; /* Трохи більший шрифт на мобільних */
+        padding: 10px;
       }
     }
-
   </style>
 </head>
 <body>
