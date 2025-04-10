@@ -15,27 +15,27 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      overflow: auto;
+      overflow: hidden;
     }
 
     .container {
       text-align: center;
       color: #fff;
-      padding: 15px;
-      background: rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.3);
       border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-      margin-bottom: 20px;
-      max-width: 85%;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      margin-bottom: 15px;
+      max-width: 90%;
     }
 
     h1 {
-      font-size: 6vw; /* Меньше для мобільних */
-      margin-bottom: 10px;
+      font-size: 8vw;
+      margin-bottom: 5px;
     }
 
     p {
-      font-size: 4vw; /* Меньше для мобільних */
+      font-size: 5vw;
       margin-top: 0;
     }
 
@@ -43,14 +43,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 15px;
-      margin-bottom: 20px;
+      gap: 10px;
+      margin-bottom: 15px;
       width: 100%;
     }
 
     .photos img {
       width: 80%;
-      max-width: 250px;
+      max-width: 220px;
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
@@ -60,6 +60,20 @@
       width: 100%;
       display: flex;
       justify-content: center;
+    }
+
+    .audio button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #ff5e5e;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .audio button:hover {
+      background-color: #ff3b3b;
     }
 
     .hearts {
@@ -74,8 +88,8 @@
 
     .heart {
       position: absolute;
-      width: 15px;
-      height: 15px;
+      width: 12px;
+      height: 12px;
       background: red;
       transform: rotate(45deg);
       animation: float 6s linear infinite;
@@ -84,19 +98,19 @@
     .heart::before, .heart::after {
       content: '';
       position: absolute;
-      width: 15px;
-      height: 15px;
+      width: 12px;
+      height: 12px;
       background: red;
       border-radius: 50%;
     }
 
     .heart::before {
-      top: -8px;
+      top: -6px;
       left: 0;
     }
 
     .heart::after {
-      left: -8px;
+      left: -6px;
       top: 0;
     }
 
@@ -111,23 +125,22 @@
       }
     }
 
-    /* Медіа-запити для мобільних пристроїв */
     @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+
       h1 {
-        font-size: 8vw;
+        font-size: 10vw;
       }
 
       p {
-        font-size: 5vw;
+        font-size: 6vw;
       }
 
       .photos img {
         width: 90%;
-        max-width: 300px;
-      }
-
-      .container {
-        padding: 10px;
+        max-width: 280px;
       }
     }
   </style>
@@ -145,7 +158,8 @@
   </div>
 
   <div class="audio">
-    <audio controls autoplay loop>
+    <button onclick="playAudio()">Відтворити пісню</button>
+    <audio id="audio" loop>
       <source src="https://muzka.cc/uploads/files/2023-03/1679586978_tik-bez-tebe.mp3" type="audio/mpeg">
       Ваш браузер не підтримує аудіо.
     </audio>
@@ -155,6 +169,7 @@
 
   <script>
     const heartsContainer = document.getElementById('hearts');
+    const audio = document.getElementById('audio');
 
     function createHeart() {
       const heart = document.createElement('div');
@@ -169,6 +184,11 @@
     }
 
     setInterval(createHeart, 300);
+
+    function playAudio() {
+      audio.play();
+    }
   </script>
 </body>
 </html>
+
