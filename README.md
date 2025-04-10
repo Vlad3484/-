@@ -30,8 +30,8 @@
     }
 
     h1, p {
-      font-size: 0.2vw; /* Зроблено однаковим для заголовка і тексту */
-      margin-bottom: 3px;
+      font-size: 0.5vw; /* Зроблено однаковим для заголовка і тексту */
+      margin-bottom: 0.5px;
       margin-top: 0;
     }
 
